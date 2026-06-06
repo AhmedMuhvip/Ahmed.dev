@@ -60,7 +60,7 @@ const Experience = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 via-blue-500 to-pink-500 rounded-full" />
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-cyan-500 via-slate-500 to-blue-500 rounded-full" />
 
           {/* Experience Items */}
           <div className="space-y-12">
@@ -82,10 +82,10 @@ const Experience = () => {
                     {/* Header */}
                     <div className="flex items-start justify-between mb-4 flex-wrap gap-4">
                       <div className="flex-1">
-                        <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-400 transition-colors">
+                        <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">
                           {exp?.position}
                         </h3>
-                        <div className="flex items-center gap-2 text-purple-400 font-semibold mb-2">
+                        <div className="flex items-center gap-2 text-cyan-400 font-semibold mb-2">
                           <Briefcase className="w-4 h-4" />
                           <span>{exp?.company}</span>
                         </div>
@@ -119,7 +119,7 @@ const Experience = () => {
                           transition={{ duration: 0.3, delay: index * 0.2 + respIndex * 0.1 }}
                           className="flex items-start gap-3 text-gray-300"
                         >
-                          <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                          <span className="w-2 h-2 bg-cyan-500 rounded-full mt-2 flex-shrink-0" />
                           <span>{resp}</span>
                         </motion.li>
                       )) ?? []}
@@ -131,7 +131,7 @@ const Experience = () => {
                 <div className="hidden md:flex items-center justify-center">
                   <motion.div
                     whileHover={{ scale: 1.3 }}
-                    className={`w-6 h-6 rounded-full bg-gradient-to-br ${exp?.current ? 'from-green-500 to-emerald-500' : 'from-purple-500 to-pink-500'} shadow-lg animate-pulse-glow`}
+                    className={`w-6 h-6 rounded-full bg-gradient-to-br ${exp?.current ? 'from-green-500 to-emerald-500' : 'from-cyan-500 to-blue-500'} shadow-lg animate-pulse-glow`}
                   />
                 </div>
 

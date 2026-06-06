@@ -8,7 +8,7 @@ import Contact from '@/components/contact'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 dark:from-slate-950 dark:via-purple-950 dark:to-slate-950">
+    <main className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Navigation />
       <Hero />
       <Skills />

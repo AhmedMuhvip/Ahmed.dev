@@ -71,16 +71,16 @@ const Navigation = () => {
                   {item?.name}
                 </motion.button>
               )) ?? []}
-              
+
               {/* Theme Toggle */}
-              <motion.button
-                whileHover={{ scale: 1.1, rotate: 180 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-full glass hover:bg-purple-500/20 transition-colors"
-              >
-                {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </motion.button>
+              {/*<motion.button*/}
+              {/*  whileHover={{ scale: 1.1, rotate: 180 }}*/}
+              {/*  whileTap={{ scale: 0.9 }}*/}
+              {/*  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}*/}
+              {/*  className="p-2 rounded-full glass hover:bg-cyan-500/15 transition-colors"*/}
+              {/*>*/}
+              {/*  {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}*/}
+              {/*</motion.button>*/}
             </div>
 
             {/* Mobile Menu Button */}
@@ -93,7 +93,7 @@ const Navigation = () => {
               >
                 {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </motion.button>
-              
+
               <motion.button
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -14,7 +14,7 @@ const Skills = () => {
         {
             title: 'Backend',
             icon: Server,
-            color: 'from-purple-500 to-pink-500',
+            color: 'from-cyan-500 to-blue-500',
             skills: ['PHP', 'Laravel', 'Eloquent ORM', 'RESTful APIs', 'OOP']
         },
         {
@@ -44,7 +44,7 @@ const Skills = () => {
         {
             title: 'Version Control',
             icon: GitBranch,
-            color: 'from-indigo-500 to-purple-500',
+            color: 'from-slate-500 to-cyan-500',
             skills: ['Git', 'GitHub', 'Agile/Scrum', 'Code Review', 'CI/CD']
         }
     ]
@@ -151,7 +151,7 @@ const Skills = () => {
                                         initial={{width: 0}}
                                         animate={inView ? {width: `${lang?.level ?? 0}%`} : {}}
                                         transition={{duration: 1, delay: 0.5 + index * 0.1, ease: 'easeOut'}}
-                                        className="h-full bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
+                                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
                                     />
                                 </div>
                                 <p className="text-sm text-gray-400 mt-2">{lang?.level}%</p>

@@ -19,7 +19,7 @@ const Hero = () => {
         <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
             {/* Animated background elements */}
             <motion.div
-                className="absolute w-96 h-96 bg-purple-500/30 rounded-full blur-3xl"
+                className="absolute w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl"
                 animate={{
                     x: mousePosition?.x / 20 ?? 0,
                     y: mousePosition?.y / 20 ?? 0
@@ -28,7 +28,7 @@ const Hero = () => {
                 style={{top: '10%', left: '10%'}}
             />
             <motion.div
-                className="absolute w-96 h-96 bg-blue-500/30 rounded-full blur-3xl"
+                className="absolute w-96 h-96 bg-slate-500/10 rounded-full blur-3xl"
                 animate={{
                     x: -(mousePosition?.x / 30) ?? 0,
                     y: -(mousePosition?.y / 30) ?? 0
@@ -46,7 +46,7 @@ const Hero = () => {
                         transition={{duration: 0.5}}
                         className="mb-4"
                     >
-                        <span className="text-purple-400 text-lg">Hello, I'm</span>
+                        <span className="text-cyan-400 text-lg">Hello, I'm</span>
                     </motion.div>
 
                     {/* Name */}
@@ -101,7 +101,7 @@ const Hero = () => {
                             href="#contact"
                             whileHover={{scale: 1.05}}
                             whileTap={{scale: 0.95}}
-                            className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold flex items-center gap-2 hover:shadow-lg hover:shadow-purple-500/50 transition-shadow"
+                            className="px-8 py-3 bg-gradient-to-r from-slate-100 to-cyan-500 rounded-full font-semibold flex items-center gap-2 text-slate-950 hover:shadow-lg hover:shadow-cyan-500/25 transition-shadow"
                         >
                             <Mail className="w-5 h-5"/>
                             Get In Touch
@@ -163,7 +163,7 @@ const Hero = () => {
                         transition={{duration: 1.5, repeat: Infinity, delay: 1}}
                         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
                     >
-                        <ArrowDown className="w-6 h-6 text-purple-400"/>
+                        <ArrowDown className="w-6 h-6 text-cyan-400"/>
                     </motion.div>
                 </div>
             </div>

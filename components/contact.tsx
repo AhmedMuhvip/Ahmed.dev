@@ -16,7 +16,7 @@ const Contact = () => {
       label: 'Email',
       value: 'progahmedmuhammed@gmail.com',
       link: 'mailto:progahmedmuhammed@gmail.com',
-      gradient: 'from-purple-500 to-pink-500'
+      gradient: 'from-cyan-500 to-blue-500'
     },
     {
       icon: Phone,
@@ -39,7 +39,7 @@ const Contact = () => {
       icon: Mail,
       label: 'Email',
       link: 'mailto:progahmedmuhammed@gmail.com',
-      color: 'hover:text-purple-400'
+      color: 'hover:text-cyan-400'
     }
   ]
 
@@ -105,7 +105,7 @@ const Contact = () => {
           className="glass rounded-3xl p-12 text-center relative overflow-hidden group"
         >
           {/* Background Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Content */}
           <div className="relative z-10">
@@ -114,7 +114,7 @@ const Contact = () => {
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
               className="inline-block mb-6"
             >
-              <Send className="w-16 h-16 text-purple-400" />
+              <Send className="w-16 h-16 text-cyan-400" />
             </motion.div>
             <h3 className="text-3xl font-bold mb-4">Ready to work together?</h3>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -124,7 +124,7 @@ const Contact = () => {
               href="mailto:AhmedMuhammed0031@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/50 transition-shadow"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-slate-100 to-cyan-500 rounded-full font-semibold text-lg text-slate-950 hover:shadow-lg hover:shadow-cyan-500/25 transition-shadow"
             >
               <Mail className="w-5 h-5" />
               Send me an email

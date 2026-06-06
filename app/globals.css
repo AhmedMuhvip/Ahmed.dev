@@ -27,25 +27,25 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222.2 84% 2.5%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 222.2 84% 3.2%;
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 222.2 84% 3.2%;
     --popover-foreground: 210 40% 98%;
-    --primary: 262 83% 58%;
+    --primary: 188 92% 45%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 222.2 47.4% 11.2%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
+    --muted: 222.2 47.4% 11.2%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 222.2 47.4% 11.2%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 262 83% 58%;
+    --border: 222.2 47.4% 11.2%;
+    --input: 222.2 47.4% 11.2%;
+    --ring: 188 92% 45%;
   }
 }
 
@@ -68,16 +68,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(9, 9, 11, 0.8);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #a855f7, #6366f1);
+  background: linear-gradient(180deg, #22d3ee, #2563eb);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #9333ea, #4f46e5);
+  background: linear-gradient(180deg, #67e8f9, #3b82f6);
 }
 
 /* Glassmorphism effect */
@@ -95,12 +95,12 @@ html {
 .glass-hover:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.16);
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #a855f7, #6366f1, #ec4899);
+  background: linear-gradient(135deg, #e2e8f0, #22d3ee, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -127,10 +127,10 @@ html {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.25);
   }
   50% {
-    box-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.35);
   }
 }
 

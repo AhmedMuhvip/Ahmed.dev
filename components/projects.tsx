@@ -15,8 +15,8 @@ const Projects = () => {
       title: 'Rightgive',
       description: 'A comprehensive donation platform with secure payment processing and real-time features',
       period: 'Feb 2025 — Dec 2025',
-      status: 'In Development',
-      link: null,
+      status: 'Completed',
+      link: 'https://rightgive.com/',
       github: null,
       features: [
         'Designed and developed scalable backend architecture using Laravel (PHP)',
@@ -27,7 +27,24 @@ const Projects = () => {
         'Optimized database queries for high-volume donation transactions'
       ],
       technologies: ['Laravel', 'PHP', 'MySQL', 'Stripe API', 'WebSockets', 'Pusher', 'Firebase', 'RESTful API'],
-      gradient: 'from-purple-500 to-pink-500'
+      gradient: 'from-cyan-500 to-blue-500'
+    },
+    {
+      title: 'Stream App',
+      description: 'A multi-tenant streaming platform with live channel playback, subscription access, and private video delivery',
+      period: 'Mar 2026 — Present',
+      status: 'In Progress',
+      link: 'https://streaming.islamchannel.tv/',
+      github: null,
+      features: [
+        'Built a multi-tenant architecture to support separate clients and branded streaming experiences',
+        'Integrated Dailymotion for reliable live and on-demand video playback',
+        'Implemented Stripe payments for subscriptions and secure access control',
+        'Added private video support so subscribed users can access protected content only',
+        'Used Firebase to support real-time updates, auth, and scalable app services'
+      ],
+      technologies: ['Multi-Tenant', 'Dailymotion', 'Stripe', 'Subscriptions', 'Private Videos', 'Firebase'],
+      gradient: 'from-slate-500 to-cyan-500'
     },
     {
       title: 'Socialze X',
@@ -84,7 +101,7 @@ const Projects = () => {
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">
                       {project?.title}
                     </h3>
                     <p className="text-gray-400 text-sm mb-2">{project?.period}</p>
@@ -94,7 +111,7 @@ const Projects = () => {
                       {project?.status}
                     </span>
                   </div>
-                  <Rocket className="w-8 h-8 text-purple-400" />
+                  <Rocket className="w-8 h-8 text-cyan-400" />
                 </div>
 
                 {/* Description */}
@@ -102,11 +119,11 @@ const Projects = () => {
 
                 {/* Features */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold mb-3 text-purple-400">Key Features:</h4>
+                  <h4 className="text-sm font-semibold mb-3 text-cyan-400">Key Features:</h4>
                   <ul className="space-y-2">
                     {project?.features?.slice?.(0, 4)?.map?.((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start gap-2 text-sm text-gray-400">
-                        <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-2 flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     )) ?? []}
@@ -115,7 +132,7 @@ const Projects = () => {
 
                 {/* Technologies */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold mb-3 text-purple-400">Technologies:</h4>
+                  <h4 className="text-sm font-semibold mb-3 text-cyan-400">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project?.technologies?.map?.((tech, techIndex) => (
                       <span
@@ -137,7 +154,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-shadow"
+                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-slate-100 to-cyan-500 rounded-full text-sm font-semibold text-slate-950 hover:shadow-lg hover:shadow-cyan-500/25 transition-shadow"
                     >
                       <ExternalLink className="w-4 h-4" />
                       View Project
