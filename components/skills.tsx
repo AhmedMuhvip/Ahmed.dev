@@ -15,7 +15,7 @@ const Skills = () => {
             title: 'Backend',
             icon: Server,
             color: 'from-cyan-500 to-blue-500',
-            skills: ['PHP', 'Laravel', 'Eloquent ORM', 'RESTful APIs', 'OOP']
+            skills: ['PHP', 'Laravel', 'Eloquent ORM', 'RESTful APIs', 'OOP', 'Design Patterns', 'SOLID Principles', 'GraphQL']
         },
         {
             title: 'Database',
@@ -27,19 +27,25 @@ const Skills = () => {
             title: 'Frontend',
             icon: Globe,
             color: 'from-orange-500 to-yellow-500',
-            skills: ['HTML', 'CSS', 'JavaScript', 'Livewire', 'Blade Template']
+            skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js', 'Livewire', 'Blade Template']
         },
         {
             title: 'Tools & Tech',
             icon: Package,
             color: 'from-green-500 to-emerald-500',
-            skills: ['Git', 'GitHub', 'Laravel Sanctum', 'Laravel Passport', 'Pusher']
+            skills: ['Git', 'GitHub', 'Laravel Sanctum', 'Laravel Passport', 'Pusher', 'Stripe', 'Dailymotion', 'Socialite', 'Cashier', 'Redis', 'JWT', 'Sentry']
         },
         {
             title: 'Development',
             icon: Code2,
             color: 'from-pink-500 to-rose-500',
-            skills: ['API Development', 'WebSockets', 'Job Queues', 'Event Broadcasting', 'Authentication']
+            skills: ['API Development', 'WebSockets', 'Job Queues', 'Event Broadcasting', 'Authentication', 'Middleware', 'Service Layer']
+        },
+        {
+            title: 'DevOps & Infrastructure',
+            icon: GitBranch,
+            color: 'from-indigo-500 to-purple-500',
+            skills: ['Docker', 'Laravel Telescope', 'Nginx', 'Linux/Unix', 'GitHub Actions', 'Logging & Monitoring', 'Deployment']
         },
         {
             title: 'Version Control',
