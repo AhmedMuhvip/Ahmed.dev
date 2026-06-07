@@ -81,13 +81,13 @@ const Skills = () => {
     }
 
     return (
-        <section id="skills" className="py-20 relative overflow-hidden">
+        <section id="skills" className="py-20 relative overflow-hidden bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Section Header */}
                 <motion.div
                     ref={ref}
                     initial={{opacity: 0, y: 20}}
-                    animate={inView ? {opacity: 1, y: 0} : {}}
+                    animate={inView ? {opacity: 1, y: 0} : {opacity: 1, y: 0}}
                     transition={{duration: 0.5}}
                     className="text-center mb-16"
                 >
@@ -100,7 +100,7 @@ const Skills = () => {
                     ref={ref}
                     variants={containerVariants}
                     initial="hidden"
-                    animate={inView ? 'visible' : 'hidden'}
+                    animate={inView ? 'visible' : 'visible'}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
                 >
                     {skillCategories?.map?.((category, index) => {
@@ -137,7 +137,7 @@ const Skills = () => {
                 {/* Languages Section */}
                 <motion.div
                     initial={{opacity: 0, y: 20}}
-                    animate={inView ? {opacity: 1, y: 0} : {}}
+                    animate={inView ? {opacity: 1, y: 0} : {opacity: 1, y: 0}}
                     transition={{duration: 0.5, delay: 0.3}}
                     className="glass rounded-3xl p-8"
                 >
@@ -147,7 +147,7 @@ const Skills = () => {
                             <motion.div
                                 key={index}
                                 initial={{opacity: 0, scale: 0.9}}
-                                animate={inView ? {opacity: 1, scale: 1} : {}}
+                                animate={inView ? {opacity: 1, scale: 1} : {opacity: 1, scale: 1}}
                                 transition={{duration: 0.5, delay: 0.4 + index * 0.1}}
                                 className="text-center"
                             >
@@ -155,7 +155,7 @@ const Skills = () => {
                                 <div className="relative h-2 bg-white/10 rounded-full overflow-hidden">
                                     <motion.div
                                         initial={{width: 0}}
-                                        animate={inView ? {width: `${lang?.level ?? 0}%`} : {}}
+                                        animate={inView ? {width: `${lang?.level ?? 0}%`} : {width: `${lang?.level ?? 0}%`}}
                                         transition={{duration: 1, delay: 0.5 + index * 0.1, ease: 'easeOut'}}
                                         className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
                                     />

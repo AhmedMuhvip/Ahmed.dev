@@ -85,14 +85,14 @@ const Navigation = () => {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-4">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-full glass"
-              >
-                {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </motion.button>
+              {/*<motion.button*/}
+              {/*  whileHover={{ scale: 1.1 }}*/}
+              {/*  whileTap={{ scale: 0.9 }}*/}
+              {/*  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}*/}
+              {/*  className="p-2 rounded-full glass"*/}
+              {/*>*/}
+              {/*  {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}*/}
+              {/*</motion.button>*/}
 
               <motion.button
                 whileTap={{ scale: 0.9 }}

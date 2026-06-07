@@ -56,10 +56,33 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Mobile viewport optimization */
+  @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Ensure hero section has proper background on mobile */
+section#home {
+  background-color: hsl(var(--background));
+}
+
+/* Add scroll margin for all sections to account for fixed nav */
+section {
+  scroll-margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 5rem;
+  }
 }
 
 /* Custom scrollbar */
@@ -109,6 +132,27 @@ html {
 /* Hide hydration errors */
 [data-hydration-error] {
   display: none !important;
+}
+
+/* Mobile performance optimization */
+@media (max-width: 768px) {
+  main {
+    will-change: auto;
+  }
+
+  section {
+    will-change: contents;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+
+  /* Prevent layout shifts caused by fixed nav */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Animation keyframes */

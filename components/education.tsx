@@ -29,13 +29,13 @@ const Education = () => {
   ]
 
   return (
-    <section id="education" className="py-20 relative overflow-hidden">
+    <section id="education" className="py-20 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
@@ -49,7 +49,7 @@ const Education = () => {
             key={index}
             ref={ref}
             initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="max-w-4xl mx-auto"
           >
@@ -100,7 +100,7 @@ const Education = () => {
                       <motion.div
                         key={highlightIndex}
                         initial={{ opacity: 0, x: -20 }}
-                        animate={inView ? { opacity: 1, x: 0 } : {}}
+                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                         transition={{ duration: 0.3, delay: 0.3 + highlightIndex * 0.1 }}
                         whileHover={{ x: 5 }}
                         className="flex items-center gap-3 p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors"

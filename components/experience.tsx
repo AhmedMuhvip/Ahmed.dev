@@ -43,13 +43,13 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="py-20 relative overflow-hidden">
+    <section id="experience" className="py-20 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
@@ -69,7 +69,7 @@ const Experience = () => {
                 key={index}
                 ref={ref}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
+                animate={inView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
               >
@@ -115,7 +115,7 @@ const Experience = () => {
                         <motion.li
                           key={respIndex}
                           initial={{ opacity: 0, x: -20 }}
-                          animate={inView ? { opacity: 1, x: 0 } : {}}
+                          animate={inView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                           transition={{ duration: 0.3, delay: index * 0.2 + respIndex * 0.1 }}
                           className="flex items-start gap-3 text-gray-300"
                         >

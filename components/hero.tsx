@@ -16,25 +16,25 @@ const Hero = () => {
     }, [])
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <section id="home" className="min-h-screen w-full flex items-center justify-center relative overflow-hidden pt-20 md:pt-16 bg-background">
             {/* Animated background elements */}
             <motion.div
-                className="absolute w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl"
+                className="absolute w-64 h-64 md:w-96 md:h-96 bg-cyan-500/15 rounded-full blur-3xl"
                 animate={{
                     x: mousePosition?.x / 20 ?? 0,
                     y: mousePosition?.y / 20 ?? 0
                 }}
                 transition={{type: 'spring', stiffness: 50}}
-                style={{top: '10%', left: '10%'}}
+                style={{top: '10%', left: '-5%'}}
             />
             <motion.div
-                className="absolute w-96 h-96 bg-slate-500/10 rounded-full blur-3xl"
+                className="absolute w-64 h-64 md:w-96 md:h-96 bg-slate-500/10 rounded-full blur-3xl"
                 animate={{
                     x: -(mousePosition?.x / 30) ?? 0,
                     y: -(mousePosition?.y / 30) ?? 0
                 }}
                 transition={{type: 'spring', stiffness: 50}}
-                style={{bottom: '10%', right: '10%'}}
+                style={{bottom: '10%', right: '-5%'}}
             />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
