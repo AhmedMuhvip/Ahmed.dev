@@ -1,15 +1,13 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Moon, Sun, Menu, X } from 'lucide-react'
-import { useTheme } from 'next-themes'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Navigation = () => {
   const [mounted, setMounted] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)
@@ -72,28 +70,10 @@ const Navigation = () => {
                 </motion.button>
               )) ?? []}
 
-              {/* Theme Toggle */}
-              {/*<motion.button*/}
-              {/*  whileHover={{ scale: 1.1, rotate: 180 }}*/}
-              {/*  whileTap={{ scale: 0.9 }}*/}
-              {/*  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}*/}
-              {/*  className="p-2 rounded-full glass hover:bg-cyan-500/15 transition-colors"*/}
-              {/*>*/}
-              {/*  {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}*/}
-              {/*</motion.button>*/}
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center space-x-4">
-              {/*<motion.button*/}
-              {/*  whileHover={{ scale: 1.1 }}*/}
-              {/*  whileTap={{ scale: 0.9 }}*/}
-              {/*  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}*/}
-              {/*  className="p-2 rounded-full glass"*/}
-              {/*>*/}
-              {/*  {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}*/}
-              {/*</motion.button>*/}
-
               <motion.button
                 whileTap={{ scale: 0.9 }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
